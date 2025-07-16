@@ -16,7 +16,7 @@ if uploaded_file:
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
     image = cv2.imdecode(file_bytes, 1)
 
-    st.image(image, caption="🖼️ Original Image", use_container_width=True)
+    st.image(image, caption="🖼️ Original Image", use_column_width=True)
 
     if st.button("🔄 Replace Detected Tickets"):
         table_boxes = detect_ticket_tables(image, debug=True)
