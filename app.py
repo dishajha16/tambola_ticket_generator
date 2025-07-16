@@ -36,7 +36,7 @@ if uploaded_file:
 
             # Display
             rgb = cv2.cvtColor(modified_image, cv2.COLOR_BGR2RGB)
-            st.image(rgb, caption="✅ Updated Tambola Image", use_container_width=True)
+            st.image(rgb, caption="✅ Updated Tambola Image", use_column_width=True)
 
             # Download button
             st.download_button(
